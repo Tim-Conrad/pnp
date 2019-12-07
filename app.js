@@ -110,18 +110,25 @@ function tellStory(story, next){
 
 function description(obj){
   console.log(obj);
-  $('#story').append("<p>"+obj.text+"</p>\n");
+  $("<p>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000);
+  window.scrollTo(0,document.body.scrollHeight);
 }
 
 function question(obj){
   console.log(obj);
-  $('#story').append(obj.text)
+  $("<p>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000)
   var list = "<ol>\n"
   for (var i = 0; i < obj.question.length; i++) {
     list += "<li><a onclick='tellStory(story,\""+obj.question[i].next+"\")'>"+obj.question[i].text+"</a></li>\n"
   }
   list += "</ol>\n"
-  $('#story').append(list)
+  $(list).hide().appendTo('#story').fadeIn(1000)
+
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 // init story
