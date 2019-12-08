@@ -499,7 +499,7 @@ function question(obj){
   $("<p class='lead'>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000)
   var list = "<ol class='lead'>\n"
   for (var i = 0; i < obj.question.length; i++) {
-    list += "<li><a onclick='tellStory(story,\""+obj.question[i].next+"\")'>"+obj.question[i].text+"</a></li>\n"
+    list += "<li><a class='text-warning' onclick='tellStory(story,\""+obj.question[i].next+"\")'>"+obj.question[i].text+"</a></li>\n"
   }
   list += "</ol>\n"
   $(list).hide().appendTo('#story').fadeIn(1000)
