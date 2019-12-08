@@ -64,14 +64,14 @@ var story = {
     },
     {
       "type" : "question",
-      "text" : "Würfel, ob du dich errinern kannst. (Über 10 Errinerung geschafft.)",
+      "text" : "Würfel, ob du dich errinern kannst. (Würfel über 10, für einen Erfolg.)",
       "question": [
         {
-          "text" : "Du hast dich errinert...",
+          "text" : "Du hast dich errinert... (+)",
           "next" : "Schlafzimmer|7"
         },
         {
-          "text" : "Du hast dich leider nicht errinert...",
+          "text" : "Du hast dich leider nicht errinert... (-)",
           "next" : "Schlafzimmer|8"
         }
       ]
@@ -100,7 +100,7 @@ var story = {
     }
   ],
   "Flur" : [
-    {
+    {//0
       "type" : "question",
       "text" : "Wohin willst du gehen?",
       "question": [
@@ -126,7 +126,7 @@ var story = {
         }
       ]
     },
-    {
+    {//1
       "type" : "question",
       "text" : "Wohin willst du gehen?",
       "question": [
@@ -152,7 +152,7 @@ var story = {
         }
       ]
     },
-    {
+    {//2
       "type" : "question",
       "text" : "Wohin willst du gehen?",
       "question": [
@@ -175,6 +175,28 @@ var story = {
         {
           "text" : "Schlafzimmer, du legst dich einfach wieder hin...",
           "next" : "Start|0"
+        }
+      ]
+    },
+    {//3
+      "type" : "question",
+      "text" : "Wohin willst du gehen?",
+      "question": [
+        {
+          "text" : "Badezimmer",
+          "next" : "Badezimmer|1"
+        },
+        {
+          "text" : "Küche",
+          "next" : "Küche|0"
+        },
+        {
+          "text" : "Arbeitszimmer",
+          "next" : "Arbeitszimmer|6"
+        },
+        {
+          "text" : "Wohnzimmer",
+          "next" : "Wohnzimmer|13"
         }
       ]
     }
@@ -252,25 +274,131 @@ var story = {
     }
   ],
   "Wohnzimmer" : [
-    {
+    {//0
       "type" : "description",
       "text" : "Du betittst das Wohnzimmer, plötzlich springt dir Jonas mit seiner Rollenspiel Axt entgegen. Und fordert dich zum Zweikampf auf!",
       "next" : "Wohnzimmer|1"
     },
-    {
+    {//1
       "type" : "question",
       "text" : "Was machst du?",
       "question": [
         {
-          "text" : "Code eingeben...",
-          "next" : "Code|0"
+          "text" : "Umschauen [WAHRNEHMUNG]",
+          "next" : "Wohnzimmer|2"
         },
         {
-          "text" : "Du gehst wieder in den Flur...",
-          "next" : "Flur|2"
+          "text" : "Mit machen",
+          "next" : "Wohnzimmer|7"
+        },
+        {
+          "text" : "Nachdenken",
+          "next" : "Wohnzimmer|6"
         }
       ]
-    }
+    },
+    {//2
+      "type" : "question",
+      "text" : "Würfel ob dir im Wohnzimmer etwas auffällt, das du verwenden könntest. (Würfel über 10, für einen Erfolg)",
+      "question": [
+        {
+          "text" : "Du siehst etwas... (+)",
+          "next" : "Wohnzimmer|3"
+        },
+        {
+          "text" : "Das Wohnzimmer sieht aus wie immer, also bis auf die Party spuren... (-)",
+          "next" : "Wohnzimmer|4"
+        }
+      ]
+    },
+    {//3
+      "type" : "description",
+      "text" : "Du entdeckst einen Boonekamp, versuche zu überlegen was du damit machen könntest.",
+      "next" : "Wohnzimmer|4"
+    },
+    {//4
+      "type" : "question",
+      "text" : "Was machst du?",
+      "question": [
+        {
+          "text" : "Mit machen",
+          "next" : "Wohnzimmer|7"
+        },
+        {
+          "text" : "Nachdenken",
+          "next" : "Wohnzimmer|5"
+        }
+      ]
+    },
+    {//5
+      "type" : "description",
+      "text" : "Jonas ist immer heiß auf Boonekamp, du siehst ihm an wie er die Flasche in deiner Hand fixiert. Du fragst ihn: \"Nah, bock auf Boonekamp?\", du hast aber seine Lust falsch eingeschätzt vom Kater überweltigt rennt er mit blassem gesicht und den Händen vor dem Mund in die Küche.",
+      "next" : "Wohnzimmer|6"
+    },
+    {//6
+      "type" : "description",
+      "text" : "Jonas lässt ein Stück Papier fallen, du hebst es interessiert auf. Es steht nicht viel auf dem Zettel nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
+      "next" : "Flur|2"
+    },
+    {//7
+      "type" : "description",
+      "text" : "Du ziehst dein Zauberbuch hervor und schießst einen Froststrahl auf Jonas.",
+      "next" : "Wohnzimmer|8"
+    },
+    {//8
+      "type" : "description",
+      "text" : "WHAT!? Du kannst Froststrahlen machen? [INNERER MONOLOG] Nice!",
+      "next" : "Wohnzimmer|9"
+    },
+    {//9
+      "type" : "description",
+      "text" : "Du siehst das Joans bewegungsunfähig ist, es ihm ansonsten aber gut zu gehen scheint.",
+      "next" : "Wohnzimmer|10"
+    },
+    {//10
+      "type" : "question",
+      "text" : "Was machst du?",
+      "question": [
+        {
+          "text" : "Jonas auf wervolle Gegenstände untersuchen? (Looten)",
+          "next" : "Wohnzimmer|11"
+        },
+        {
+          "text" : "Mit Jonas Axt üben, vielleicht bist du ja neben einer Zauberin auch eine badass Kriegerin.",
+          "next" : "Wohnzimmer|12"
+        }
+      ]
+    },
+    {//11
+      "type" : "description",
+      "text" : "Du findest leider nichts wertvolles aber einen Zettel. Es steht nicht viel auf dem Zettel nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
+      "next" : "Flur|3"
+    },
+    {//12
+      "type" : "description",
+      "text" : "Du schwingst die Axt akrobatisch durch die luft, in dem Versuch einen Slato über den Couchtisch zu machen erwischst du die Lampe. Nun sind zwei Lampenschirme kapputt.",
+      "next" : "Wohnzimmer|13"
+    },
+    {//13
+      "type" : "description",
+      "text" : "Du gehst zurück zu Jonas.",
+      "next" : "Wohnzimmer|14"
+    },
+    {//14
+      "type" : "question",
+      "text" : "Was machst du?",
+      "question": [
+        {
+          "text" : "Jonas auf wervolle Gegenstände untersuchen? (Looten)",
+          "next" : "Wohnzimmer|11"
+        }
+      ]
+    },
+    {//15
+      "type" : "description",
+      "text" : "Nichts zu sehen außer ein eingefrohrener Jonas. Du gehst zurück in den Flur.",
+      "next" : "Flur|3"
+    },
   ],
   "Code" : [
     {
@@ -316,12 +444,12 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "Du nennst Anna und Tim wohin do Spenden möchtest.",
+      "text" : "Du nennst Anna und Tim wohin du Spenden möchtest.",
       "next" : "Ende|2"
     },
     {
       "type" : "description",
-      "text" : "DAS ENDEN...",
+      "text" : "DAS ENDE",
       "next" : ""
     }
   ]
@@ -341,6 +469,12 @@ function tellStory(story, next){
   }
   let args = next.split('|');
   let obj = story[args[0]][args[1]];
+  //remove all other links actions to invalidate previous behaviour
+  $("a").removeAttr('onclick');
+  $("button").removeAttr('onclick');
+  $("input").removeAttr('id');
+
+  // insert new dialog
   if(obj.type === "description"){
     description(obj)
     return tellStory(story, obj.next)
