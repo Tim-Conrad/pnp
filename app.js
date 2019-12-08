@@ -408,7 +408,7 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "Code: <div class='input-group'><input type='text' class='input-group' id='code' placeholder='Code hier eingeben'></input><span class='input-group-btn'><button class='btn btn-warning' onclick='submitCode()'>Go!</button></span></div>",
+      "text" : "<div class='input-group'><span class='input-group-addon' id='basic-addon1'>Code</span><input type='text' class='form-control' aria-describedby='basic-addon1' id='code' placeholder='Code hier eingeben'></input><span class='input-group-btn'><button class='btn btn-warning' onclick='submitCode()'>Go!</button></span></div>",
       "next" : ""
     },
     {
