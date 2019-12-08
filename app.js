@@ -293,7 +293,7 @@ var story = {
         },
         {
           "text" : "Nachdenken",
-          "next" : "Wohnzimmer|6"
+          "next" : "Wohnzimmer|5"
         }
       ]
     },
