@@ -25,17 +25,17 @@ var story = {
   "Schlafzimmer" : [
     {
       "type" : "description",
-      "text" : "Um dich fühlt sich alles sehr weich und warm an. Etwas weiches und schweres leigt auf dir. Du streckst dich. Du liegst in einem Bett. Und du öffnest die Augen, es ist dein Bett.",
+      "text" : "Um dich fühlt sich alles sehr weich und warm an. Etwas Weiches und Schweres leigt auf dir. Du streckst dich. Du liegst in einem Bett. Und du öffnest die Augen, es ist dein Bett.",
       "next" : "Schlafzimmer|2"
     },
     {
       "type" : "description",
-      "text" : "Du erwachst deine Augen sind noch sehr schwer. Du schaust dich um und erkennst dein Schlafzimmer.",
+      "text" : "Du erwachst, deine Augen sind noch sehr schwer. Du schaust dich um und erkennst dein Schlafzimmer.",
       "next" : "Schlafzimmer|2"
     },
     {
       "type" : "description",
-      "text" : "Nach dem du an die Decke blickst erkennst schaust du auf die Uhr. Schon 17:00 Uhr am 08.12.2019. Huch ist das nicht dein Geburtstag?",
+      "text" : "Nachdem du an die Decke blickst, schaust du auf die Uhr. Schon 17:00 Uhr am 08.12.2019. Huch, ist das nicht dein Geburtstag!?",
       "next" : "Schlafzimmer|3"
     },
     {
@@ -45,7 +45,7 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "[LOGIK] Du hast wohl wieder einen Mittagsschlaf gemacht, der Geschmack nach Alkohol in deinem Mund deutet auf eine Feier hin. Der Uhrzeit nach zuschliessen war es wohl ein Brunch und kein Party am Abend.",
+      "text" : "[LOGIK] Du hast wohl wieder einen Mittagsschlaf gemacht, der Geschmack nach Alkohol in deinem Mund deutet auf eine Feier hin. Der Uhrzeit nach zu urteilen war es wohl ein Brunch und keine Party am Abend.",
       "next" : "Schlafzimmer|5"
     },
     {
@@ -64,38 +64,38 @@ var story = {
     },
     {
       "type" : "question",
-      "text" : "Würfel, ob du dich errinern kannst. (Würfel über 10, für einen Erfolg.)",
+      "text" : "Würfel, ob du dich erinnern kannst. (Würfel über 10, für einen Erfolg.)",
       "question": [
         {
-          "text" : "Du hast dich errinert... (+)",
+          "text" : "Du hast dich erinnert... (+)",
           "next" : "Schlafzimmer|7"
         },
         {
-          "text" : "Du hast dich leider nicht errinert... (-)",
+          "text" : "Du hast dich leider nicht erinnert... (-)",
           "next" : "Schlafzimmer|8"
         }
       ]
     },
     {
       "type" : "description",
-      "text" : "Du errinerst dich, deine Geschenke liegen im Wohnzimmer. Aber dir fällt nicht mehr ein was du genau bekommen hast. Besonders das Geschenk von Anna und Tim interessiert dich. Du trittst in den Flur.",
+      "text" : "Du erinnerst dich, deine Geschenke liegen im Wohnzimmer. Aber dir fällt nicht mehr ein, was du genau bekommen hast. Besonders das Geschenk deiner allerbesten, tollsten, und großartigsten Freunde Anna und Tim interessiert dich. Du trittst in den Flur.",
       "next" : "Schlafzimmer|8"
     },
     {
       "type" : "description",
-      "text" : "Mehrer Bierflaschen stehen im Flur, dein Blick fällt entlang der Gaderobe richtung Küche, Arbeitszimmer und Wohnzimmer. Neben dir ist das Badezimmer.",
+      "text" : "Mehrere Bierflaschen stehen im Flur, dein Blick fällt entlang der Garderobe Richtung Küche, Arbeitszimmer und Wohnzimmer. Neben dir ist das Badezimmer.",
       "next" : "Flur|0"
     }
   ],
   "Badezimmer" : [
     {
       "type" : "description",
-      "text" : "\"BESETZT!\" ruft es aus dem Klo also du die Klinke runter drückst. \"Dann schließ doch ab\" rufst du zurück und trittst zurück in den Flur.",
+      "text" : "\"BESETZT!\" ruft es aus dem Klo, als du die Klinke runter drückst. \"Dann schließ doch ab\" rufst du zurück und trittst zurück in den Flur.",
       "next" : "Flur|1"
     },
     {
       "type" : "description",
-      "text" : "[WAHRNEHMUNG] Die Türe ist jetzt verschossen, du trittst zurück in den Flur.",
+      "text" : "[WAHRNEHMUNG] Die Tür ist jetzt verschossen, du trittst zurück in den Flur.",
       "next" : "Flur|1"
     }
   ],
@@ -204,24 +204,24 @@ var story = {
   "Küche" : [
     {
       "type" : "description",
-      "text" : "Was für ein durcheinander, du blickst dich um. Flaschen und Teller über all verstreut. Alles ist dreckig.",
+      "text" : "Was für ein Durcheinander, du blickst dich um. Flaschen und Teller überall verstreut. Alles ist dreckig.",
       "next" : "Küche|1"
     },
     {
       "type" : "description",
-      "text" : "[IDEE] Dir kommt die Idee du hättest deine Gäste verpflichten sollen beim Aufräumen zu helfen. Leider zu spät. Vllt. hilft der verblieben Gast vom Klo ja mit. Fragen willst du ihn aber lieber noch nicht.",
+      "text" : "[IDEE] Dir kommt die Idee, du hättest deine Gäste verpflichten sollen, beim Aufräumen zu helfen. Leider zu spät. Vielleicht hilft der verbliebene Gast vom Klo ja mit. Fragen willst du ihn aber lieber noch nicht.",
       "next" : "Flur|1"
     }
   ],
   "Arbeitszimmer" : [
     {
       "type" : "description",
-      "text" : "[WAHRNEHMUNG] Ein gruseliges Flackern kommt aus dem Türspalt des Arbeitszimmer.",
+      "text" : "[WAHRNEHMUNG] Ein gruseliges Flackern dringt durch den Türspalt des Arbeitszimmers.",
       "next" : "Arbeitszimmer|1"
     },
     {
       "type" : "description",
-      "text" : "[ERINNERN] Du glaubst du wolltest irgendwas in diesem raum machen. Und das es wichtig war...",
+      "text" : "[ERINNERN] Du glaubst, du wolltest irgendwas in diesem Raum machen. Und dass es wichtig war...",
       "next" : "Arbeitszimmer|2"
     },
     {
@@ -240,12 +240,12 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "Das Flackern kommt von deinem geöffneten Laptop. Du schaust näher hin und findest den ein echt interessantes Rollenspiel.",
+      "text" : "Das Flackern stammt von deinem geöffneten Laptop. Du schaust näher hin und liest auf dem Display etwas zu einem echt interessanten Rollenspiel.",
       "next" : "Arbeitszimmer|4"
     },
     {
       "type" : "description",
-      "text" : "Die Bewertungen sind unglaublich. 10 von 10 Punkten. Das Beste Rollenspiel des Jahres. Muss man einfach kaufen!. War das nicht Teil von Annas und Tims Geschenk?",
+      "text" : "Die Bewertungen sind unglaublich. 10 von 10 Punkten. Das beste Rollenspiel des Jahres. Muss man einfach kaufen! War das nicht Teil von Annas und Tims Geschenk?",
       "next" : "Arbeitszimmer|5"
     },
     {
@@ -276,7 +276,7 @@ var story = {
   "Wohnzimmer" : [
     {//0
       "type" : "description",
-      "text" : "Du betittst das Wohnzimmer, plötzlich springt dir Jonas mit seiner Rollenspiel Axt entgegen. Und fordert dich zum Zweikampf auf!",
+      "text" : "Du betittst das Wohnzimmer, plötzlich springt dir Jonas mit seiner Axt Katra entgegen und fordert dich zum Zweikampf auf!",
       "next" : "Wohnzimmer|1"
     },
     {//1
@@ -288,7 +288,7 @@ var story = {
           "next" : "Wohnzimmer|2"
         },
         {
-          "text" : "Mit machen",
+          "text" : "Mitmachen",
           "next" : "Wohnzimmer|7"
         },
         {
@@ -299,14 +299,14 @@ var story = {
     },
     {//2
       "type" : "question",
-      "text" : "Würfel ob dir im Wohnzimmer etwas auffällt, das du verwenden könntest. (Würfel über 10, für einen Erfolg)",
+      "text" : "Würfel, ob dir im Wohnzimmer etwas auffällt, das du verwenden könntest. (Würfel über 10, für einen Erfolg)",
       "question": [
         {
           "text" : "Du siehst etwas... (+)",
           "next" : "Wohnzimmer|3"
         },
         {
-          "text" : "Das Wohnzimmer sieht aus wie immer, also bis auf die Party spuren... (-)",
+          "text" : "Das Wohnzimmer sieht aus wie immer, also bis auf die Partyspuren...der Fernseher scheint aber heile geblieben zu sein. (-)",
           "next" : "Wohnzimmer|4"
         }
       ]
@@ -321,7 +321,7 @@ var story = {
       "text" : "Was machst du?",
       "question": [
         {
-          "text" : "Mit machen",
+          "text" : "Mitmachen",
           "next" : "Wohnzimmer|7"
         },
         {
@@ -332,17 +332,17 @@ var story = {
     },
     {//5
       "type" : "description",
-      "text" : "Jonas ist immer heiß auf Boonekamp, du siehst ihm an wie er die Flasche in deiner Hand fixiert. Du fragst ihn: \"Nah, bock auf Boonekamp?\", du hast aber seine Lust falsch eingeschätzt vom Kater überweltigt rennt er mit blassem gesicht und den Händen vor dem Mund in die Küche.",
+      "text" : "Du weißt, Jonas ist immer heiß auf Boonekamp, du siehst ihm an wie er die Flasche in deiner Hand anschaut. Du fragst ihn: \"Na, Bock auf Boonekamp?\" Du hast aber seinen Blick falsch eingeschätzt. Vom Kater überwältigt, rennt er mit blassem Gesicht und den Händen vor dem Mund in die Küche.",
       "next" : "Wohnzimmer|6"
     },
     {//6
       "type" : "description",
-      "text" : "Jonas lässt ein Stück Papier fallen, du hebst es interessiert auf. Es steht nicht viel auf dem Zettel nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
+      "text" : "Jonas lässt ein Stück Papier fallen, du hebst es interessiert auf. Es steht nicht viel auf dem Zettel, nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
       "next" : "Flur|2"
     },
     {//7
       "type" : "description",
-      "text" : "Du ziehst dein Zauberbuch hervor und schießst einen Froststrahl auf Jonas.",
+      "text" : "Du ziehst dein Zauberbuch hervor und schießt einen Froststrahl auf Jonas.",
       "next" : "Wohnzimmer|8"
     },
     {//8
@@ -352,7 +352,7 @@ var story = {
     },
     {//9
       "type" : "description",
-      "text" : "Du siehst das Joans bewegungsunfähig ist, es ihm ansonsten aber gut zu gehen scheint.",
+      "text" : "Du siehst, dass Jonas bewegungsunfähig ist, es ihm ansonsten aber gut zu gehen scheint.",
       "next" : "Wohnzimmer|10"
     },
     {//10
@@ -360,7 +360,7 @@ var story = {
       "text" : "Was machst du?",
       "question": [
         {
-          "text" : "Jonas auf wervolle Gegenstände untersuchen? (Looten)",
+          "text" : "Jonas auf wertvolle Gegenstände untersuchen? (Looten)",
           "next" : "Wohnzimmer|11"
         },
         {
@@ -371,12 +371,12 @@ var story = {
     },
     {//11
       "type" : "description",
-      "text" : "Du findest leider nichts wertvolles aber einen Zettel. Es steht nicht viel auf dem Zettel nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
+      "text" : "Du findest leider nichts wertvolles, aber einen Zettel. Es steht nicht viel auf dem Zettel, nur \"LaraBDAY2019!\". Du gehst zurück in den Flur.",
       "next" : "Flur|3"
     },
     {//12
       "type" : "description",
-      "text" : "Du schwingst die Axt akrobatisch durch die luft, in dem Versuch einen Slato über den Couchtisch zu machen erwischst du die Lampe. Nun sind zwei Lampenschirme kapputt.",
+      "text" : "Du schwingst die Axt akrobatisch durch die luft, in dem Versuch einen Salto über den Couchtisch zu machen, erwischst du die Lampe. Nun sind zwei Lampenschirme kaputt.",
       "next" : "Wohnzimmer|13"
     },
     {//13
@@ -396,7 +396,7 @@ var story = {
     },
     {//15
       "type" : "description",
-      "text" : "Nichts zu sehen außer ein eingefrohrener Jonas. Du gehst zurück in den Flur.",
+      "text" : "Nichts zu sehen außer ein eingefrorener Jonas. Du gehst zurück in den Flur.",
       "next" : "Flur|3"
     },
   ],
@@ -423,7 +423,7 @@ var story = {
     },
     {
       "type" : "question",
-      "text" : "\"Möchten Sie das Spiel kaufen oder das Geld für einen Guten Zweck spenden?\" Wie entscheidest du dich?",
+      "text" : "\"Möchten Sie das Spiel kaufen oder das Geld für einen guten Zweck spenden?\" Wie entscheidest du dich?",
       "question": [
         {
           "text" : "Spiel kaufen",
@@ -444,7 +444,7 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "Du nennst Anna und Tim wohin du Spenden möchtest.",
+      "text" : "Du sagst Anna und Tim wohin du spenden möchtest.",
       "next" : "Ende|2"
     },
     {
