@@ -471,8 +471,11 @@ function tellStory(story, next){
   let obj = story[args[0]][args[1]];
   //remove all other links actions to invalidate previous behaviour
   $("a").removeAttr('onclick');
+  $("a").attr("disabled", true);
   $("button").removeAttr('onclick');
+  $("button").attr("disabled", true);
   $("input").removeAttr('id');
+  $("input").attr("disabled", true);
 
   // insert new dialog
   if(obj.type === "description"){
@@ -487,14 +490,14 @@ function tellStory(story, next){
 
 function description(obj){
   console.log(obj);
-  $("<p>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000);
+  $("<p class='lead'>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000);
   window.scrollTo(0,document.body.scrollHeight);
 }
 
 function question(obj){
   console.log(obj);
-  $("<p>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000)
-  var list = "<ol>\n"
+  $("<p class='lead'>"+obj.text+"</p>\n").hide().appendTo('#story').fadeIn(1000)
+  var list = "<ol class='lead'>\n"
   for (var i = 0; i < obj.question.length; i++) {
     list += "<li><a onclick='tellStory(story,\""+obj.question[i].next+"\")'>"+obj.question[i].text+"</a></li>\n"
   }
