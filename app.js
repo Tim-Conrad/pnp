@@ -408,7 +408,7 @@ var story = {
     },
     {
       "type" : "description",
-      "text" : "Code: <input id='code' placeholder='Code hier eingeben'></input><button onclick='submitCode()'>Go!</button>",
+      "text" : "Code: <input id='code' placeholder='Code hier eingeben'></input><button class='btn btn-warning' onclick='submitCode()'>Go!</button>",
       "next" : ""
     },
     {
